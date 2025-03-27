@@ -47,13 +47,17 @@ VARIABLES: Para declarar una variable en PHP se debe usar
 
     apellido = `Fernandez`; // falta el "$" 
 
-    pais_de_origen="Uruguay" // falta el "$", falta el ; por lo que no estamos cerrando la variable. 
+    pais_de_origen="Uruguay" // falta el "$", falta el ; por lo que no estamos cerrando la variable 
 
     $salario = $2000; // el signo de dinero es innecesario ya que al no llevar comillas no lo toma como texto. 
 
+#-----------------------------------------------------------------------------------------#
 
+/* CONSTANTES: son identificadores que representan un valor unico y no cambian durante la ejecucion del script
+               utilizadas para simplificar un dato, me sirve mas poner "GRAVEDAD" que poner los datos cada vez que quiera utilizarlos
+               AHORRAN MEMORIA  */
 
-
-
+                define("GRAVEDAD", 9, 8); #Define el nombre y un valor a la variable
+                const GRAVEDAD = 9, 8; #lo mismo pero simplificado
 
 ?>
