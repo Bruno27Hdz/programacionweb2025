@@ -7,12 +7,14 @@
                         'precio' => 50];
 
     #ACTIVIDAD 2
-        foreach ($videojuego as $key => $value)
-                echo $value;  
+        foreach ($videojuego as $clave => $valor)
+                echo "$clave $valor<br>" ;
 
-
-
-
+    #ACTIVIDAD3 
+    $videojuego = ['stock' => 10];
+    if ($videojuego['stock'] > 1) {
+        echo "AUN QUEDAN ". $videojuego['stock']. " !!!";;
+    }
 
 
 ?>
